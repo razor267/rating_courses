@@ -1,6 +1,6 @@
 import React from "react";
 import {Htag} from "../components/Htag/Htag";
-import {Button} from "../components";
+import {Button, P, Tag} from "../components";
 
 export default function Home(): JSX.Element {
     return (
@@ -8,6 +8,15 @@ export default function Home(): JSX.Element {
             <Htag tag='h1'>Текст</Htag>
             <Button appearance='primary' arrow='right'>Кнопка</Button>
             <Button appearance='ghost' arrow='down'>Кнопка</Button>
+            <P size='l'>Большой</P>
+            <P>Средний</P>
+            <P size='s'>Маленький</P>
+            <Tag size='m' color='green'>Мал</Tag>
+            <Tag color='red'>red</Tag>
+            <Tag color='green'>green</Tag>
+            <Tag color='gray'>gray</Tag>
+            <Tag color='primary' size='m'>primary</Tag>
+            <Tag color='ghost'>ghost</Tag>
         </>
     );
 }
