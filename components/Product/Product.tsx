@@ -4,11 +4,18 @@ import cn from 'classnames';
 import styles from './Product.module.css';
 import {Button, Card, Divider, Rating, Tag} from "..";
 import {declOfNum, priceRu} from "../../helpers/helpers";
+import Image from 'next/image';
 
 export const Product = ({product, className, ...props}: ProductProps): JSX.Element => {
     return (
         <Card className={styles.product}>
-            <div className={styles.logo}><img src={process.env.NEXT_PUBLIC_DOMAIN + product.image} alt={product.title}/>
+            <div className={styles.logo}>
+                <Image
+                    src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
+                    alt={product.title}
+                    width={70}
+                    height={70}
+                />
             </div>
             <div className={styles.title}>{product.title}</div>
             <div className={styles.price}>
@@ -48,7 +55,7 @@ export const Product = ({product, className, ...props}: ProductProps): JSX.Eleme
                     <div>{product.disadvantages}</div>
                 </div>}
             </div>
-            <Divider className={styles.hr}/>
+            <Divider className={cn(styles.hr, styles.hr2)}/>
             <div className={styles.actions}>
                 <Button appearance='primary'>Узнать подробнее</Button>
                 <Button appearance='ghost' arrow={'right'} className={styles.reviewButton}>Читать отзывы</Button>
