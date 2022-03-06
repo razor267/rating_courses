@@ -141,7 +141,7 @@
 
 .opened {
     max-height: auto;
-    padding: 30;
+    padding: 30px;
 }
 
 @media screen and (max-width: 1320px) {
