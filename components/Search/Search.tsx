@@ -1,5 +1,5 @@
 import {SearchProps} from "./Search.props";
-import React, {useState} from "react";
+import React, {useState, KeyboardEvent} from "react";
 import cn from 'classnames';
 import styles from './Search.module.css';
 import {Button, Input} from "..";

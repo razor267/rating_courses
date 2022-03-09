@@ -2,10 +2,11 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+
 	color: var(--black);
 	background: #F5F6F8;
 
-	font-family: 'Noto Sans Display', sans-serif;
+	font-family: "Noto Sans Display", sans-serif;
 }
 
 a {
@@ -19,10 +20,12 @@ a {
 }
 
 .visualyHidden {
+	position: absolute;
+
+	overflow: hidden;
+
 	width: 0;
 	height: 0;
-	overflow: hidden;
-	position: absolute;
 }
 
 :root {
@@ -37,5 +40,5 @@ a {
 	--red-light: #FEA291;
 	--green: #007B48;
 	--green-light: #C8F8E4;
-    --font-family: 'Noto Sans Display', sans-serif;
+	--font-family: "Noto Sans Display", sans-serif;
 }
