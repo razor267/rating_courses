@@ -40,7 +40,7 @@ const ProductComponent = forwardRef(({product, className, ...props}: ProductProp
         >
             <Card className={styles.product}>
                 <div className={styles.logo}>
-                    <Image
+                    <img
                         src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
                         alt={product.title}
                         width={70}
