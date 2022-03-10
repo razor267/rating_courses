@@ -5,6 +5,7 @@ import styles from './Rating.module.css';
 import StarIcon from './star.svg';
 
 export const Rating = forwardRef(({error, isEditable = false, rating, setRating, tabIndex, ...props}: RatingProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
+    Rating.displayName = 'Rating';
 
     const [ratingArray, setRatingArray] = useState<JSX.Element[]>(new Array(5).fill(<></>));
     const ratingArrayRef = useRef<(HTMLSpanElement | null)[]>([]);
@@ -30,6 +31,7 @@ export const Rating = forwardRef(({error, isEditable = false, rating, setRating,
         const updatedArray = ratingArray.map((r: JSX.Element, i: number) => {
             return (
                 <span
+                    key={i}
                     className={cn(styles.star, {
                         [styles.filled]: i < curentRating,
                         [styles.editable]: isEditable

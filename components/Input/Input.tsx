@@ -4,6 +4,7 @@ import cn from 'classnames';
 import styles from './Input.module.css';
 
 export const Input = forwardRef(({className, error, ...props}: InputProps, ref: ForwardedRef<HTMLInputElement>): JSX.Element => {
+    Input.displayName = 'Input';
     return (
         <div className={cn(styles.inputWrapper, className)}>
             <input className={cn(styles.input, {

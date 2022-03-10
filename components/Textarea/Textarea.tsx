@@ -4,6 +4,7 @@ import cn from 'classnames';
 import styles from './Textarea.module.css';
 
 export const Textarea = forwardRef(({error, className, ...props}: TextareaProps, ref: ForwardedRef<HTMLTextAreaElement>): JSX.Element => {
+    Textarea.displayName = 'Textarea';
     return (
         <div className={cn(styles.textareaWrapper, className)}>
             <textarea className={cn(styles.textarea, {

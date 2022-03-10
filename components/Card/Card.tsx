@@ -4,6 +4,7 @@ import cn from 'classnames';
 import styles from './Card.module.css';
 
 export const Card = forwardRef(({color = 'white', children, className, ...props}: CardProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
+    Card.displayName = 'Card';
     return (
         <div className={cn(styles.card, className, {
             [styles.blue]: color == 'blue'

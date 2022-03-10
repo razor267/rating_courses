@@ -7,7 +7,8 @@ import {declOfNum, priceRu} from "../../helpers/helpers";
 import Image from 'next/image';
 import {motion} from 'framer-motion';
 
-export const Product = motion(forwardRef(({product, className, ...props}: ProductProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
+const ProductComponent = forwardRef(({product, className, ...props}: ProductProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
+    ProductComponent.displayName = 'Product';
 
     const [isReviewOpened, setIsReviewOpened] = useState<boolean>(false);
     const reviewRef = useRef<HTMLDivElement>(null);
@@ -130,4 +131,6 @@ export const Product = motion(forwardRef(({product, className, ...props}: Produc
             </motion.div>
         </div>
     );
-}));
+});
+
+export const Product = motion(ProductComponent);
