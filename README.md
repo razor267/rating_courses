@@ -23,8 +23,8 @@
 npm start
 ```
 # Interface
-<div align="center"><img src="https://i.ibb.co/phRw9Z5/ezgif-com-gif-maker.gif" alt="ReviewProject" border="0"></div>
-</br>
+<p align="center"><img src="https://i.ibb.co/phRw9Z5/ezgif-com-gif-maker.gif" alt="ReviewProject" border="0"></p>
+
 <div align="right">
   <img src="https://i.ibb.co/XLPJSyM/react-icon.png" alt="react" height="40px"/>
   <img src="https://i.ibb.co/PrCNpDg/redux-icon.png" alt="redux" height="40px"/>
