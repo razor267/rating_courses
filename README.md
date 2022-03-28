@@ -22,12 +22,14 @@
 ```bash
 npm start
 ```
-
-<div align="center"><img src="https://i.ibb.co/7RVvQbp/preview-project.gif" alt="ReviewProject"/></div>
+# Interface
+<div align="center"><img src="https://i.ibb.co/phRw9Z5/ezgif-com-gif-maker.gif" alt="ReviewProject" border="0"></div>
+</br>
 <div align="right">
   <img src="https://i.ibb.co/XLPJSyM/react-icon.png" alt="react" height="40px"/>
   <img src="https://i.ibb.co/PrCNpDg/redux-icon.png" alt="redux" height="40px"/>
   <img src="https://i.ibb.co/5n6NZh2/typescript-icon.png" alt="typeScript" height="40px"/>
+  <img src="https://i.ibb.co/dWj57LQ/figma-icon.png" alt="Figma" height="40px"/>
   <img src="https://i.ibb.co/72YpBjg/icons8-css-60.png" alt="css" height="40px"/>
   <img src="https://i.ibb.co/R6XVMZt/html-icon.png" alt="html" height="40px"/>
-</div> 
+</div>
